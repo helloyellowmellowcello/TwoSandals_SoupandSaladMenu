@@ -1,0 +1,237 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Component Styles
+  6. Page Styles
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+
+body {
+    background: #f7f7f7;
+}
+.chalkboard {
+    background: #232323;
+}
+.clearfix::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.marginauto {
+    margin: 0 auto;
+}
+.paddingauto {
+    padding: 0 auto;
+}
+
+/* 2. Typography Styles
+======================================== */
+
+a:link, a:visited, header {
+    text-decoration:  none;
+    font-weight:      700;
+    color: #ffffff;
+}
+body {
+    font-family: 'Roboto Slab', serif;
+}
+.boldgrayfont {
+    color: #333;
+}
+header p {
+    font-size: 3rem;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: -53px auto 20px;
+    border: solid #EFC700 3px;
+    width: 325px;
+    height: 65px;
+}
+h4 {
+    font-weight: 300;
+}
+.orange {
+    color:#f6703e;
+}
+.yellowheading {
+    font-family: 'Londrina Shadow', cursive;
+    color: #FFD800;
+}
+
+/* 3. Structure Styles
+======================================== */
+
+/* Menu Dishes */
+.Menu {
+    padding: 2rem 5rem 3.75rem 5rem;
+}
+.Menu__List {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem 1.75rem;
+    margin-bottom: 3.75rem;
+}
+.Menu__ListItem--ImageContainer {
+    width: 377px;
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 4. Module Styles
+======================================== */
+
+/* Header */
+#currentpage {
+    border: solid #ffffff 1px;
+}
+.cart {
+    float: right;
+    padding-right: 15px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+header {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+        }
+header .logo {
+    float: left;
+    padding: 20px 40px 0px 40px;
+    max-width: 75px;
+    max-height: 75px;
+}
+
+/* Navigation */
+nav ul {
+    text-align: right;
+    padding-right: 8px;
+}
+nav ul li {
+    display: inline;
+    padding: 5px 10px 5px 10px;
+}
+nav ul li:hover {
+    background-color: #777777;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+/* 5. Component Styles
+======================================== */
+
+/* Menu Category Links */
+.button {
+    display: inline;
+    margin-right: 20px;
+    padding: 5px 50px 5px 50px;
+    background-color: #F6703E;
+    border: solid #F6703E 3px;
+}
+.button:hover {
+    background-color: #ffa16b;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Back to Top Button */
+#backtotopbtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    width: 75px;
+    height: 75px;
+    display: block;
+    border: none; /* Remove borders */
+    border-radius: 50%;
+    outline: none; /* Remove outline */
+    background-color: #FFD800; /* Set a background color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 25px; /* Some padding */
+    transition: all 0.3s ease;
+}
+#backtotopbtn i {
+    color: #333; /* Text color */
+    font-size: 3rem; /* Increase font size */
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    right: 11px;
+    bottom: 11px;
+    transition: all 0.3s ease;
+}
+#backtotopbtn:hover {
+    background-color: #c7a700;
+}
+#backtotopbtn:hover i {
+    color: #fff;
+    bottom: 5px;
+}
+
+/* 6. Page Styles
+======================================== */
+
+/* Introduction */
+.intro {
+    max-width: 600px;
+    padding: 20px 80px 20px 80px;
+    margin-top: 15px;
+    background: #ffffff;
+}
+.whitespace {
+    margin-bottom: 25px;
+}
+p.justify {
+    text-align: justify;
+}
+
+/* Menu Dishes */
+.Menu__Category {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+}
+.Menu__ListItem {
+    border-radius: 2px;
+    background-color: hsla(0, 0%, 100%, 1);;
+    border: solid 1px hsla(0, 0%, 91%, 1);
+}
+.Menu__ListItem--ImageContainer img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+.Menu__ListItem__Meal {
+    padding: 0.75rem 1.5rem 1.5rem;
+    text-align: left;
+    color: #5b5b5b;
+}
+.Meal--Name {
+    line-height: 1.75rem;
+    margin-bottom: .75rem;
+}
+.Meal--description: {
+    line-height: 1.25rem;
+}
+.Meal--price {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    float: right;
+    display: block;
+}
+sup {
+    font-size: .875rem;
+    vertical-align: super;
+}
